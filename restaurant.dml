@@ -1,0 +1,55 @@
+insert into ingredients values
+('chicken breast', 165, 85, 74, 31, 0, false, false),
+('rice', 130, 0, 1, 2, 28, false, false),
+('egg', 155, 373, 124, 13, 1, false, true),
+('peanut butter', 588, 0, 17, 25, 20, true, false),
+('broccoli', 55, 0, 33, 4, 11, false, false),
+('salmon', 208, 55, 59, 20, 0, false, false),
+('pasta', 131, 0, 6, 5, 25, false, false);
+
+insert into dishes values
+('chicken fried rice', 'chinese', 'entree'),
+('grilled salmon', 'american', 'entree'),
+('pasta alfredo', 'italian', 'entree'),
+('peanut noodles', 'thai', 'entree'),
+('omelette', 'french', 'breakfast'),
+('broccoli stir fry', 'chinese', 'starter');
+
+insert into convert_to_grams values
+('cup', 200),
+('ounce', 28),
+('piece', 50),
+('gram', 1);
+
+insert into driver values
+('john smith', '123-456-7890'),
+('alice brown', '987-654-3210');
+
+insert into chef values
+('Gordon Ramsay', '20 years', 9),
+('Jamie Oliver', '15 years', 6),
+('Massimo Bottura', '25 years', 7);
+
+insert into deliver_batch values
+('b01', '2026-05-01', 'chicken fried rice', 50, 'john smith', '1pm-3pm'),
+('b02', '2026-05-02', 'grilled salmon', 30, 'alice brown', '3pm-5pm'),
+('b03', '2026-05-03', 'pasta alfredo', 40, 'john smith', '5pm-7pm');
+
+insert into dish_ingredient values
+('chicken fried rice', 'chicken breast', 2, 'piece'),
+('chicken fried rice', 'rice', 1, 'cup'),
+('chicken fried rice', 'egg', 1, 'piece'),
+('grilled salmon', 'salmon', 2, 'piece'),
+('grilled salmon', 'broccoli', 1, 'cup'),
+('pasta alfredo', 'pasta', 2, 'cup'),
+('pasta alfredo', 'egg', 1, 'piece'),
+('peanut noodles', 'pasta', 2, 'cup'),
+('peanut noodles', 'peanut butter', 1, 'ounce'),
+('omelette', 'egg', 3, 'piece'),
+('broccoli stir fry', 'broccoli', 2, 'cup');
+
+insert into batch_chef values
+('b01', 'Gordon Ramsay'),
+('b02', 'Jamie Oliver'),
+('b03', 'Massimo Bottura');
+
